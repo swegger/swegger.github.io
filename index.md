@@ -9,9 +9,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ![EKF](images/Psychophysics/Figure6.png)
 
 
-![Task](https://github.com/swegger/swegger.github.io/images/Physiology/Figure1.png "Description here")
-
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![Task](images/Physiology/Figure1.png)
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
