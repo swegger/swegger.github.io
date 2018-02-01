@@ -6,7 +6,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Markdown
 
-![EKF](file://images/Psychophysics/Figure6.png)
+![EKF](images/Psychophysics/Figure6.png)
 
 
 ![Task](https://github.com/swegger/swegger.github.io/images/Physiology/Figure1.png "Description here")
