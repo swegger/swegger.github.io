@@ -3,7 +3,7 @@
 
 ### Psychophysics
 # Task
-![1-2-Go & 1-2-3-Go](images/Psychophysics/Figure1.png =100x20)
+![1-2-Go & 1-2-3-Go](images/Psychophysics/Figure1.png=100x20)
 
 ![EKF](images/Psychophysics/Figure6.png =100x20)
 
