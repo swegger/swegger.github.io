@@ -13,9 +13,15 @@ By introducing occluders that block vision of the ball, we allow ourselves the o
 To bring the batter into the lab, we developed a temporal interception task (Fig 2A,B). In the task, our subjects view a series of flashes that make up a beat. Subjects view either the first two (A) or three (B) beats, and must make a movement that coincides with the final beat (which we never actually show them). Each trial, the interval between the flashes is sampled at random from a set distribution (Fig 2C). To successfully move with the beat, the subject must measure the sample interval, t_s, and produce the same interval, t_p, after the last flash.
 
 <img src="images/Psychophysics/Figure1.png" alt="1-2-Go & 1-2-3-Go" style="width: 500px;"/>
+
+The behavior of our subjects has three interesting features (Fig 3). First, t_p increases with t_s, indicating that our subjects were capable of measuring the interval. Second, they exhibit a systematic biasing of responses away from veridical t_s (the dashed line) and toward the mean of the distribution from which they were drawn (800 ms in this case). Finally, subject behavior improved when they were given three beats (1-2-3-Go) compared to two beats (1-2-Go; Fig 3C).
+
 <img src="images/Psychophysics/Figure2.png" alt="Behavior" style="width: 500px;"/>
 
+How can we explain this behavior?
+
 ### Bayesian model
+
 <img src="images/Psychophysics/Figure3.png" alt="Bayesian model" style="width: 500px;"/>
 
 ### EKF
