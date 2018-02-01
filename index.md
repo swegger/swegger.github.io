@@ -8,8 +8,10 @@ Our approach is to study the brain as it takes in sensory information and update
 
 By introducing occluders that block vision of the ball, we allow ourselves the opportunity to measure the neural system as it carries out the simulation. Through a detailed analysis of human and nonhuman behavior, neurophsiological recordings of groups of neurons, and modeling, we attempt to garner a better understanding the algorithms and mechansims that allow for complex behaviors.
 
-## Psychophysics
+## 1-2-Go and 1-2-3-Go
 ### Task and results
+To bring the batter into the lab, we developed a temporal interception task (Fig 2A,B). In the task, our subjects view a series of flashes that make up a beat. Subjects view either the first two (A) or three (B) beats, and must make a movement that coincides with the final beat (which we never actually show them). Each trial, the interval between the flashes is sampled at random from a set distribution (Fig 2C). To successfully move with the beat, the subject must measure the sample interval, t_s, and produce the same interval, t_p, after the last flash.
+
 <img src="images/Psychophysics/Figure1.png" alt="1-2-Go & 1-2-3-Go" style="width: 500px;"/>
 <img src="images/Psychophysics/Figure2.png" alt="Behavior" style="width: 500px;"/>
 
