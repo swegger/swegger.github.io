@@ -2,11 +2,12 @@
 
 
 ### Psychophysics
-# Task
-<img src="images/Psychophysics/Figure1.png" alt="1-2-Go & 1-2-3-Go" style="width: 100px;"/>
+# Task and results
+<img src="images/Psychophysics/Figure1.png" alt="1-2-Go & 1-2-3-Go" style="width: 300px;"/>
+<img src="images/Psychophysics/Figure2.png" alt="1-2-Go & 1-2-3-Go" style="width: 300px;"/>
 
 # Bayesian model
-<img src="images/Psychophysics/Figure3.png" alt="1-2-Go & 1-2-3-Go" style="width: 100px;"/>
+<img src="images/Psychophysics/Figure3.png" alt="1-2-Go & 1-2-3-Go" style="width: 300px;"/>
 
 # EKF
 ![EKF](images/Psychophysics/Figure6.png)
