@@ -21,7 +21,7 @@ The behavior of our subjects has three interesting features (Fig 3). First, t_p 
 How can we explain this behavior?
 
 ### Bayesian model
-
+From a computational standpoint, the subjects have different sources of information they should leverage to optimize their behavior – prior experience on the task and therefore some knowledge about what intervals are possible and measurements of the interval between S1 and S2 (in 1-2-Go and 1-2-3-Go) and between S2 and S3 (in 1-2-3-Go). If we assume that their interval measurements aren't perfect, the subjects ought use their prior knowledge (e.g that on average the interval is 800 ms) in combination with measurements to solve the task. This approach is often called Bayesian inference. It involves internal representations of the prior distribution, p(t_s), and the likelihood of each t_s, given the measured interval, p(t_{m_1}|t_s). By multiplying these distributions, a posterior distribution can be calculated and an estimate of t_s after the first measurement, t_{e_1}, derrived (Fig 4A).
 <img src="images/Psychophysics/Figure3.png" alt="Bayesian model" style="width: 500px;"/>
 
 ### EKF
