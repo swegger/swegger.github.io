@@ -3,12 +3,12 @@
 
 ### Psychophysics
 # Task
-![1-2-Go & 1-2-3-Go](images/Psychophysics/Figure1.png)
+![1-2-Go & 1-2-3-Go](images/Psychophysics/Figure1.png =100x20)
 
-![EKF](images/Psychophysics/Figure6.png)
+![EKF](images/Psychophysics/Figure6.png =100x20)
 
 
-![Task](images/Physiology/Figure1.png)
+![Task](images/Physiology/Figure1.png =100x20)
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
