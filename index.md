@@ -5,7 +5,7 @@
 # Task
 ![1-2-Go & 1-2-3-Go](images/Psychophysics/Figure1.png)
 
-<img src="images/Psychophysics/Figure1.png" alt="1-2-Go & 1-2-3-Go" style="width: 200px;"/>
+<img src="images/Psychophysics/Figure1.png" alt="1-2-Go & 1-2-3-Go" style="width: 100px;"/>
 
 ![EKF](images/Psychophysics/Figure6.png =100x20)
 
