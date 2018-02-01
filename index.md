@@ -6,10 +6,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Markdown
 
-! [EKF](images/Psychophysics/Figure6.png)
+! [EKF](file://images/Psychophysics/Figure6.png)
 
 
-! [Task](images/Physiology/Figure1.png)
+! [Task](images/Physiology/Figure1.png " ")
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
