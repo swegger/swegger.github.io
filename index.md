@@ -11,6 +11,8 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ! [Task](images/Physiology/Figure1.png " ")
 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
