@@ -1,10 +1,9 @@
 ## Seth W. Egger
 
-You can use the [editor on GitHub](https://github.com/swegger/swegger.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
+### Psychophysics
+# Task
+![1-2-Go & 1-2-3-Go](images/Psychophysics/Figure1.png)
 
 ![EKF](images/Psychophysics/Figure6.png)
 
