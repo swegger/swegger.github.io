@@ -1,19 +1,19 @@
 ## Seth W. Egger
 
 
-### Psychophysics
-# Task and results
-<img src="images/Psychophysics/Figure1.png" alt="1-2-Go & 1-2-3-Go" style="width: 300px;"/>
-<img src="images/Psychophysics/Figure2.png" alt="1-2-Go & 1-2-3-Go" style="width: 300px;"/>
+## Psychophysics
+### Task and results
+<img src="images/Psychophysics/Figure1.png" alt="1-2-Go & 1-2-3-Go" style="width: 500px;"/>
+<img src="images/Psychophysics/Figure2.png" alt="Behavior" style="width: 500px;"/>
 
-# Bayesian model
-<img src="images/Psychophysics/Figure3.png" alt="1-2-Go & 1-2-3-Go" style="width: 300px;"/>
+### Bayesian model
+<img src="images/Psychophysics/Figure3.png" alt="Bayesian model" style="width: 500px;"/>
 
-# EKF
-![EKF](images/Psychophysics/Figure6.png)
+### EKF
+<img src="images/Psychophysics/Figure6.png" alt="EKF" style="width: 500px;"/>
 
-### Physiology
-![Task](images/Physiology/Figure1.png)
+## Physiology
+<img src="images/Physiology/Figure1.png" alt="1-2-3-Go" style="width: 500px;"/>
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
