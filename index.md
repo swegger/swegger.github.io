@@ -5,12 +5,12 @@
 # Task
 ![1-2-Go & 1-2-3-Go](images/Psychophysics/Figure1.png)
 
-<img src="images/Psychophysics/Figure1.png" alt="1-2-Go & 1-2-3-Go" style="width: 100px;"/>
+<img src="images/Psychophysics/Figure1.png" alt="1-2-Go & 1-2-3-Go" style="width: 10px;"/>
 
-![EKF](images/Psychophysics/Figure6.png =100x20)
+![EKF](images/Psychophysics/Figure6.png)
 
 
-![Task](images/Physiology/Figure1.png =100x20)
+![Task](images/Physiology/Figure1.png)
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
