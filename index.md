@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Seth W. Egger
 
 You can use the [editor on GitHub](https://github.com/swegger/swegger.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
