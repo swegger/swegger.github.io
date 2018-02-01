@@ -6,7 +6,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Markdown
 
-! [Alt text] (images/Psychophysics/Figure1.png)
+! [Alt text] (images/Psychophysics/Figure6.png)
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
