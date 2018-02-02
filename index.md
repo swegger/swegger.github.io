@@ -10,7 +10,7 @@ By introducing occluders that block vision of the ball (Fig 1, bottom), we allow
 
 ## 1-2-Go and 1-2-3-Go
 ### Task and results
-To bring the batter into the lab, we developed a temporal interception task (Fig 2A,B). In the task, our subjects view a series of flashes that make up a beat. Subjects view either the first two (A) or three (B) beats, and must make a movement that coincides with the final beat (which we never actually show them). Each trial, the interval between the flashes is sampled at random from a set distribution (Fig 2C). To successfully move with the beat, the subject must measure the sample interval, t<sub>s<\sub>, and produce the same interval, t_p, after the last flash.
+To bring the batter into the lab, we developed a temporal interception task (Fig 2A,B). In the task, our subjects view a series of flashes that make up a beat. Subjects view either the first two (A) or three (B) beats, and must make a movement that coincides with the final beat (which we never actually show them). Each trial, the interval between the flashes is sampled at random from a set distribution (Fig 2C). To successfully move with the beat, the subject must measure the sample interval, _t<sub>s</sub>_, and produce the same interval, _t<sub>p</sub>_, after the last flash.
 
 <img src="images/Psychophysics/Figure1.png" alt="1-2-Go & 1-2-3-Go" style="width: 500px;"/>
 
