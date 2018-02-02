@@ -30,7 +30,7 @@ From an algorithmic perspective, however, the Bayesian model is difficult to imp
 
 ### EKF
 A somewhat easier way to pull of this computation in real time is to maintain an estimate of the interval and update it with each new interval measurement (Fig 5A). 
-<img src="images/Psychophysics/Figure6.png" alt="EKF" style="width: 500px;"/>
+<img src="images/Psychophysics/Figure6.png" alt="EKF" style="width: 250px;"/>
 
 ## Physiology
 
