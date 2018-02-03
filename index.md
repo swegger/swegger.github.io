@@ -42,5 +42,7 @@ A somewhat easier way to pull of this computation in real time is to maintain an
 
 <img src="images/Psychophysics/Figure6.png" alt="EKF" style="width: 250px;"/>
 
-## Physiology
+If we reconsider the task from the point of view of the batter in Fig 1, this finding suggests that the brain is using the simulation to make predictions about the ball's position and updating that simulation according to a nonlinear function of the prediction errors.
 
+## Physiology
+But how does the brain actually pull this off? To be continued...
