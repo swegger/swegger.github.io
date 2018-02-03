@@ -1,3 +1,9 @@
+---
+title: Scientifc page for SWE
+layout: page
+---
+
+
 ## Seth W. Egger
 Pardon me, but this site is still under construction...
 
