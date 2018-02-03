@@ -1,6 +1,6 @@
 ---
 title: Scientifc page for SWE
-layout: page
+layout: post
 ---
 
 
