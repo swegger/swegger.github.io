@@ -29,7 +29,7 @@ From a computational standpoint, the subjects have different sources of informat
 
 For 1-2-3-Go trials, the subjects can use their second measurement, _t<sub>m<sub>2</sub></sub>_, to update the posterior with the likelihood function associated with the second measurement,
 
-p(_t<sub>m<sub>2</sub></sub>_|_t<sub>s</sub>_) (Fig 4C).
+p(_t<sub>m<sub>2</sub></sub>_|_t<sub>s</sub>_). (Fig 4C).
 
 The estimate after two measurements, _t<sub>e<sub>2</sub></sub>_, then can be derrived and used to guide production behavior. It turns out that this framework explains subject behavior very well (see curves in Fig 3A,B).
 
