@@ -1,6 +1,7 @@
 ---
 title: Scientifc page for SWE
 layout: post
+theme: Cayman
 ---
 
 
