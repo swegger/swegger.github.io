@@ -24,7 +24,10 @@ How can we explain this behavior?
 
 ### Bayesian model
 From a computational standpoint, the subjects have different sources of information they should leverage to optimize their behavior – prior experience on the task and therefore some knowledge about what intervals are possible and measurements of the interval between S1 and S2 (in 1-2-Go and 1-2-3-Go) and between S2 and S3 (in 1-2-3-Go). If we assume that their interval measurements aren't perfect, the subjects ought use their prior knowledge (e.g that on average the interval is 800 ms) in combination with measurements to solve the task. This approach is often called Bayesian inference. For 1-2-Go trials, Bayes inference requires internal representations of the prior distribution, p(_t<sub>s</sub>_), and the likelihood of each _t<sub>s</sub>_, given the measured interval, p(_t<sub>m<sub>1</sub></sub>_|_t<sub>s</sub>_). By multiplying these distributions, a posterior distribution can be calculated and an estimate of _t<sub>s</sub>_ after the first measurement, _t<sub>e<sub>1</sub></sub>_ (Fig 4A).
+
 <img src="images/Psychophysics/Figure3.png" alt="Bayesian model" style="width: 500px;"/>
+
+WTF?
 
 For 1-2-3-Go trials, the subjects can use their second measurement, _t<sub>m<sub>2</sub></sub>_, to update the posterior with the likelihood function associated with the second measurement, p(_t<sub>m<sub>2</sub></sub>_|_t<sub>s</sub>_) (Fig 4C). The estimate after two measurements, _t<sub>e<sub>2</sub></sub>_, then can be derrived and used to guide production behavior. It turns out that this framework explains subject behavior very well (see curves in Fig 3A,B). The prior induces the systematic biasing, and the inclusion of a second likelihood results in improved estimation of the interval.
 
