@@ -27,9 +27,11 @@ From a computational standpoint, the subjects have different sources of informat
 
 <img src="images/Psychophysics/Figure3.png" alt="Bayesian model" style="width: 500px;"/>
 
-WTF?
+For 1-2-3-Go trials, the subjects can use their second measurement, _t<sub>m<sub>2</sub></sub>_, to update the posterior with the likelihood function associated with the second measurement, p(_t<sub>m<sub>2</sub></sub>_|_t<sub>s</sub>_) (Fig 4C).
 
-For 1-2-3-Go trials, the subjects can use their second measurement, _t<sub>m<sub>2</sub></sub>_, to update the posterior with the likelihood function associated with the second measurement, p(_t<sub>m<sub>2</sub></sub>_|_t<sub>s</sub>_) (Fig 4C). The estimate after two measurements, _t<sub>e<sub>2</sub></sub>_, then can be derrived and used to guide production behavior. It turns out that this framework explains subject behavior very well (see curves in Fig 3A,B). The prior induces the systematic biasing, and the inclusion of a second likelihood results in improved estimation of the interval.
+The estimate after two measurements, _t<sub>e<sub>2</sub></sub>_, then can be derrived and used to guide production behavior. It turns out that this framework explains subject behavior very well (see curves in Fig 3A,B).
+
+The prior induces the systematic biasing, and the inclusion of a second likelihood results in improved estimation of the interval.
 
 From an algorithmic perspective, however, the Bayesian model is difficult to implement in the time-scale required of the task (less than a second every trial). The the sophsitication of the algorithm required can be appreciated by examining Fig 4B and D. These plot the effective mapping function (e.g. what is it the subject should do) given any one (B) or pair of two (D) noisy measurements. In particular, the combination of measurements in 1-2-3-Go requires an extremely nonlinear function (as indicated by the grayscale and red contours that plot the combination of measurements that give rise to the same estimate).
 
