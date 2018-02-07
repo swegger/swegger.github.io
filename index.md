@@ -43,5 +43,7 @@ A somewhat easier way to pull of this computation in real time is to maintain an
 
 From a broader perspective this is an interesting finding. It suggests that the brain can't perform the sophisticated operations required of the Bayesian operation in real-time. At the same time it suggests that the approximation the brain uses is to update internal estimates. Reconsidering the task of the batter in Fig 1, this finding suggests that the brain is using the simulation to make predictions about the ball's position and updating that simulation according to a nonlinear function of the prediction error.
 
+[Please see our full publication for more in depth information.](https://www.biorxiv.org/content/early/2018/02/07/258434)
+
 ## Physiology
 But how does the brain actually pull this off? To be continued...
