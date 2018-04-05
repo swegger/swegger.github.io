@@ -52,12 +52,20 @@ Specifically, we expect the brain to form two representations: _r<sub>1</sub>_ w
 
 We see evidence that the brain implements this strategy by examining the state of population activity, conditioned on _t<sub>s</sub>_, over the course of 1-2-3-Go, which I will refer to as a neural trajectory (Fig 7).
 
-<img src="images/Physiology/Trajectories.png" alt="NeuralHypothesis" style="width: 250px;"/>
+<img src="images/Physiology/Trajectories.png" alt="Trajectories" style="width: 250px;"/>
 
 Although trajectories corresponding to different _t<sub>s</sub>_ were highly self-similar, they were offset from one another after S2 form a persistent but dynamic representation of _t<sub>s</sub>_, much like our prediction of the _r<sub>1</sub>_ population in Fig 6). Further, trajectories terminated in nearby states at the time of S3 and Go irrespective of the duration of _t<sub>s</sub>_. This observation implies that the speed at which different trajectories evolve has an inverse relationship to _t<sub>s</sub>_, consistent with the behavior of a predictive simulator (e.g. _r<sub>2</sub>_ in Fig 6).
 
 To quantify this, we took advantage of the fact that trajectories were self-similar, and treated neural activities as runners on a track. That is, a fast moving trajectory will take less time to move a given distance along the track than a slow moving trajectory. We therefore found the time it took each trajectory to move to each location along the "track" (Fig 8).
 
-<img src="images/Physiology/Trajectories.png" alt="NeuralSpeeds" style="width: 250px;"/>
+<img src="images/Physiology/NeuralSpeeds.png" alt="NeuralSpeeds" style="width: 250px;"/>
+
+Much like our simple hypothesis which predicted timing with ramping activity of different speeds (i.e. slopes), we found that neural populations regulate their speeds in a manner consistent with the action of a simulator.
+
+Finally, we quantified how offset the neural trajectories are from the trajectory associated with _t<sub>s</sub>_ = 800 ms (the median interval duration).
+
+<img src="images/Physiology/NeuralDistance.png" alt="NeuralDistance" style="width: 250px;"/>
+
+
 
 
