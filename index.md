@@ -21,14 +21,14 @@ To bring the batter into the lab, we developed a temporal interception task (Fig
 
 The behavior of our subjects has three interesting features (Fig 3). First, _t<sub>p</sub>_ increases with _t<sub>s</sub>_, indicating that our subjects were capable of measuring the interval. Second, they exhibit a systematic biasing of responses away from veridical _t<sub>s</sub>_ (the dashed line) and toward the mean of the distribution from which they were drawn (800 ms in this case). Finally, subject behavior improved when they were given three beats (1-2-3-Go) compared to two beats (1-2-Go; Fig 3C).
 
-<img src="images/Psychophysics/Figure2.png" alt="Behavior" style="width: 500px;"/>
+<img src="images/Psychophysics/Figure2.png" alt="Behavior" style="width: 600px;"/>
 
 How can we explain this behavior?
 
 ### Bayesian model
 From a computational standpoint, the subjects have different sources of information they should leverage to optimize their behavior – prior experience on the task and therefore some knowledge about what intervals are possible and measurements of the interval between S1 and S2 (in 1-2-Go and 1-2-3-Go) and between S2 and S3 (in 1-2-3-Go). If we assume that their interval measurements aren't perfect, the subjects ought use their prior knowledge (e.g that on average the interval is 800 ms) in combination with measurements to solve the task. This approach is often called Bayesian inference. For 1-2-Go trials, Bayes inference requires internal representations of the prior distribution, p(_t<sub>s</sub>_), and the likelihood of each _t<sub>s</sub>_, given the measured interval, p(_t<sub>m<sub>1</sub></sub>_|_t<sub>s</sub>_). By multiplying these distributions, a posterior distribution can be calculated and an estimate of _t<sub>s</sub>_ after the first measurement, _t<sub>e<sub>1</sub></sub>_ (Fig 4A).
 
-<img src="images/Psychophysics/Figure3.png" alt="Bayesian model" style="width: 500px;"/>
+<img src="images/Psychophysics/Figure3.png" alt="Bayesian model" style="width: 750px;"/>
 
 For 1-2-3-Go trials, the subjects can use their second measurement, _t<sub>m<sub>2</sub></sub>_, to update the posterior with the likelihood function associated with the second measurement (Fig 4C, yellow-orange). The estimate after two measurements, _t<sub>e<sub>2</sub></sub>_, then can be derrived and used to guide production behavior. It turns out that this framework explains subject behavior very well (see curves in Fig 3A,B). The prior induces the systematic biasing, and the inclusion of a second likelihood results in improved estimation of the interval.
 
@@ -37,7 +37,7 @@ From an algorithmic perspective, however, the Bayesian model is difficult to imp
 ### EKF
 A somewhat easier way to pull of this computation in real time is to maintain an estimate of the interval and update it with each new interval measurement (Fig 5). Intuitively, we can think of the current estimated time, _t<sub>e<sub>n</sub></sub>_ as a prediction of the timing of the next flash. Errors in this prediction (e.g. _x<sub>n+1</sub>_ = _t<sub>m<sub>n+1</sub></sub>_ - _t<sub>e<sub>n</sub></sub>_), can be used to update your estimate like so: _t<sub>e<sub>n+1</sub></sub>_ = _t<sub>e<sub>n</sub></sub>_ + _k<sub>n</sub>_ _x<sub>n+1</sub>_. If you choose the weight based on the relative reliability of your estimate and measurement, this algorithm corresponds to the Kalman filter (google it!). However, because of the noise properties of your brain's interval measurement system, this simple linear algorithm just isn't good enough to match Bayes (remember those curves in 4D?). By tweeking the error signal a little bit, an "Extended Kalman Filter (EKF)" alogirhtm can apporach Bayesian integration. By updating the estimate with a nonlinear function of the error, _f_(_x<sub>n</sub>_), this algorithm can be deployed to nearly match Bayes. It turns out that such an updating algorithm better explains human behaior than either Bayesian or simpler, linear models.
 
-<img src="images/Psychophysics/Figure6.png" alt="EKF" style="width: 350px;"/>
+<img src="images/Psychophysics/Figure6.png" alt="EKF" style="width: 500px;"/>
 
 From a broader perspective this is an interesting finding. It suggests that the brain can't perform the sophisticated operations required of the Bayesian operation in real-time. At the same time it suggests that the approximation the brain uses is to update internal estimates. Reconsidering the task of the batter in Fig 1, this finding suggests that the brain is using the simulation to make predictions about the ball's position and speed and updating that simulation according to a nonlinear function of the prediction error.
 
@@ -54,7 +54,7 @@ Specifically, we expect the brain to form two representations: _r<sub>1</sub>_ w
 ### Dynamic population activity represents the control signal and simulation
 We tested these ideas by recording from populations of neurons in the pre-motor cortex. We see evidence that the brain implements this strategy by examining the state of population activity, conditioned on _t<sub>s</sub>_, over the course of 1-2-3-Go, which I will refer to as a neural trajectory (Fig 7).
 
-<img src="images/Physiology/Trajectories.png" alt="Trajectories" style="width: 500px;"/>
+<img src="images/Physiology/Trajectories.png" alt="Trajectories" style="width: 750px;"/>
 
 Although trajectories corresponding to different _t<sub>s</sub>_ were highly self-similar, they were offset from one another after S2 form a persistent but dynamic representation of _t<sub>s</sub>_, much like our prediction of the _r<sub>1</sub>_ population in Fig 6). Further, trajectories terminated in nearby states at the time of S3 and Go irrespective of the duration of _t<sub>s</sub>_. This observation implies that the speed at which different trajectories evolve has an inverse relationship to _t<sub>s</sub>_, consistent with the behavior of a predictive simulator (e.g. _r<sub>2</sub>_ in Fig 6).
 
