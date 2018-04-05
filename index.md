@@ -71,4 +71,8 @@ To quantify the offset of neural trajectories from the trajectory associated wit
 Again, we observe a direct correlate from our simple hypothesis – the separation of trajectories is consistent with the control signal output.
 
 ### Dynamical systems implementation
-Finally, we asked what kind of 
+Finally, we asked what kind of neural circuit might be able to generate our two main findings: (1) separatin of trajectories, (2) trajectories that move at different speeds, and (3) updating based on error in predicted state. To do so, we built on simple circuit motif that can be used to generate different timed actions (Wang et. al., 2017; Fig 9a), and used this as a core computational unit for 1-2-3-Go.
+
+<img src="images/Physiology/CascadeModel.png" alt="CascadeModel" style="width: 250px;"/>
+
+The core computational unit consists of two neural populations, _u_ and _v_, that reciprocolly inhibit one another and share common input, _I_ (Fig 9a, top). Depending on the level of _I_, the dynamical system will have different energy landscapes: shallow for a large input and deep for a small input (Fig 9a, middle, pink and blue lines, respectively). As a result neural activity will move slowly for towards its stable point (_F<sub>terminal<\sub>_) for a large input and quickly for a small input. In addition, the level of input controls the position of the trajectory in state space in a direction orthogonal to the direction in which neural trajectories move (Input and Recurrent subspaces, respectively; Fig 9a, bottom).
