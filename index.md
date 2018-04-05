@@ -44,12 +44,14 @@ From a broader perspective this is an interesting finding. It suggests that the 
 [Please see our full publication for more in depth information.](https://www.biorxiv.org/content/early/2018/02/07/258434)
 
 ## Physiology
+### Internal model hypothesis
 But how does the brain actually pull this off? We formulated our hypothesis based on (1) the EKF result, during which subjects appear to formulate predictions about the timing of the next flash; (2) the presence of ramping activity leading up to actions and anticipated events (e.g. Hanes and Schall, 1996; Komura et. al., 2001); and (3) the internal model hypothesis, which tells us that predictive simulations reflect a control signal. Putting these elements together, we hypothesized that during 1-2-3-Go (Fig 6).
 
 <img src="images/Physiology/NeuralHypot.png" alt="NeuralHypothesis" style="width: 250px;"/>
 
 Specifically, we expect the brain to form two representations: _r<sub>1</sub>_ which represents the control signal (related to 1/_t<sub>e<sub>n</sub></sub>_) and _r<sub>2</sub>_ which represents the simulation. At S1, the _r<sub>1</sub>_ is based on _t<sub>e<sub>0</sub></sub>_, the estimate based on prior knowledge alone, and therefore will not vary with _t<sub>s</sub>_ (Fig 6, top left). _r<sub>2</sub>_ will be driven toward an expected state at the time of S2 (horizontal line in Fig 6, bottom left), generating ramping activity that will end at different states depending on _t<sub>s</sub>_ (squares). Like the EKF, the error between the expected result (line) and the actual result (squares) of the simulation are used to update the control signal at S2. As a result, _r<sub>1</sub>_ will have different levels that now reflect _t<sub>e<sub>1</sub></sub>_, and will therefore be different on average for different _t<sub>s</sub>_ (Fig 6, top middle). _r<sub>2</sub>_, which integrates the control signal, will now ramp up at different rates that better anticipate the state at S3 (Fig 6, bottom middle). Residual errors between the expected result (line) and actual result (squares) can again be used to update the control signal after S3, such that it refelcts _t<sub>e<sub>2</sub></sub>_ (Fig 6, top right). The control signal then drives _r<sub>2</sub>_ to threshold to activate a saccadic eye movement at the estimated time of the forth beat (Fig 6, bottom right).
 
+### Dynamic population activity represents the control signal and simulation
 We see evidence that the brain implements this strategy by examining the state of population activity, conditioned on _t<sub>s</sub>_, over the course of 1-2-3-Go, which I will refer to as a neural trajectory (Fig 7).
 
 <img src="images/Physiology/Trajectories.png" alt="Trajectories" style="width: 250px;"/>
@@ -62,10 +64,11 @@ To quantify this, we took advantage of the fact that trajectories were self-simi
 
 Much like our simple hypothesis which predicted timing with ramping activity of different speeds (i.e. slopes), we found that neural populations regulate their speeds in a manner consistent with the action of a simulator.
 
-Finally, we quantified how offset the neural trajectories are from the trajectory associated with _t<sub>s</sub>_ = 800 ms (the median interval duration).
+To quantify the offset of neural trajectories from the trajectory associated with _t<sub>s</sub>_ = 800 ms (e.g. 'Separation'), we measured the distance between trajectories at corresponding locations (e.g. the same place on the track).
 
 <img src="images/Physiology/NeuralDistance.png" alt="NeuralDistance" style="width: 250px;"/>
 
+Again, we observe a direct correlate from our simple hypothesis – the separation of trajectories is consistent with the control signal output.
 
-
-
+### Dynamical systems implementation
+Finally, we asked what kind of 
