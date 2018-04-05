@@ -70,7 +70,7 @@ To quantify the offset of neural trajectories from the trajectory associated wit
 
 Again, we observe a direct correlate from our simple hypothesis – the separation of trajectories is consistent with the control signal output.
 
-### Dynamical systems implementation
+### Neural circuit implementation
 Finally, we asked what kind of neural circuit might be able to generate our two main findings: (1) separatin of trajectories, (2) trajectories that move at different speeds, and (3) updating based on error in predicted state. To do so, we built on simple circuit motif that can be used to generate different timed actions (Wang et. al., 2017; Fig 9a), and used this as a core computational unit for 1-2-3-Go.
 
 <img src="images/Physiology/CascadeModel.png" alt="CascadeModel" style="width: 1000px;"/>
