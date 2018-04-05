@@ -45,7 +45,7 @@ From a broader perspective this is an interesting finding. It suggests that the 
 
 ## Physiology
 ### Internal model hypothesis
-But how does the brain actually pull this off? We formulated our hypothesis based on (1) the EKF result, during which subjects appear to formulate predictions about the timing of the next flash; (2) the presence of ramping activity leading up to actions and anticipated events (e.g. Hanes and Schall, 1996; Komura et. al., 2001); and (3) the internal model hypothesis, which tells us that predictive simulations reflect a control signal. Putting these elements together, we hypothesized that during 1-2-3-Go (Fig 6).
+But how does the brain actually pull this off? We formulated our hypothesis based on (1) the EKF result, during which subjects appear to formulate predictions about the timing of the next flash; (2) the presence of ramping activity leading up to actions and anticipated events (e.g. Hanes and Schall, 1996; Komura et. al., 2001); and (3) the internal model hypothesis, which tells us that predictive simulations reflect a control signal. Putting these elements together, we hypothesized that during 1-2-3-Go we would observe two types of signals (Fig 6).
 
 <img src="images/Physiology/NeuralHypot.png" alt="NeuralHypothesis" style="width: 500px;"/>
 
