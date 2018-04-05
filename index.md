@@ -9,7 +9,7 @@ How does the brain allow for complex behaviors and cognition? Several decades of
 
 Our approach is to study the brain as it takes in sensory information and updates the internal model to furnish predictions about the near future. Take, for example, a batter attepting to hit a ball in flight. Under the internal model framework, the batter's brain implements a model to simulate the ball's flight path. This simulation is continously updated by incoming visual information through the action of a state estimator and controller (Fig 1, top). The problem with studying this system is that we can't tell apart what aspects of neural signals reflect the sensory information about the ball, the simulation of the ball, or the motor commands related to hitting the ball. 
 
-<img src="images/Physiology/Batter.png" alt="1-2-3-Go" style="width: 500px;"/>
+<img src="images/Physiology/Batter.png" alt="1-2-3-Go" style="width: 1000px;"/>
 
 By introducing occluders that block vision of the ball (Fig 1, bottom), we allow ourselves the opportunity to measure the neural system as it carries out the simulation. Through a detailed analysis of human and nonhuman behavior, neurophsiological recordings of groups of neurons, and modeling, we attempt to garner a better understanding the algorithms and mechansims that allow for complex behaviors.
 
@@ -17,7 +17,7 @@ By introducing occluders that block vision of the ball (Fig 1, bottom), we allow
 ### Task and results
 To bring the batter into the lab, we developed a temporal interception task (Fig 2A,B). In the task, our subjects view a series of flashes that make up a beat. Subjects view either the first two (A) or three (B) beats, and must make a movement that coincides with the final beat (which we never actually show them). Each trial, the interval between the flashes is sampled at random from a set distribution (Fig 2C). To successfully move with the beat, the subject must measure the sample interval, _t<sub>s</sub>_, and produce the same interval, _t<sub>p</sub>_, after the last flash.
 
-<img src="images/Psychophysics/Figure1.png" alt="1-2-Go & 1-2-3-Go" style="width: 500px;"/>
+<img src="images/Psychophysics/Figure1.png" alt="1-2-Go & 1-2-3-Go" style="width: 1000px;"/>
 
 The behavior of our subjects has three interesting features (Fig 3). First, _t<sub>p</sub>_ increases with _t<sub>s</sub>_, indicating that our subjects were capable of measuring the interval. Second, they exhibit a systematic biasing of responses away from veridical _t<sub>s</sub>_ (the dashed line) and toward the mean of the distribution from which they were drawn (800 ms in this case). Finally, subject behavior improved when they were given three beats (1-2-3-Go) compared to two beats (1-2-Go; Fig 3C).
 
@@ -37,7 +37,7 @@ From an algorithmic perspective, however, the Bayesian model is difficult to imp
 ### EKF
 A somewhat easier way to pull of this computation in real time is to maintain an estimate of the interval and update it with each new interval measurement (Fig 5). Intuitively, we can think of the current estimated time, _t<sub>e<sub>n</sub></sub>_ as a prediction of the timing of the next flash. Errors in this prediction (e.g. _x<sub>n+1</sub>_ = _t<sub>m<sub>n+1</sub></sub>_ - _t<sub>e<sub>n</sub></sub>_), can be used to update your estimate like so: _t<sub>e<sub>n+1</sub></sub>_ = _t<sub>e<sub>n</sub></sub>_ + _k<sub>n</sub>_ _x<sub>n+1</sub>_. If you choose the weight based on the relative reliability of your estimate and measurement, this algorithm corresponds to the Kalman filter (google it!). However, because of the noise properties of your brain's interval measurement system, this simple linear algorithm just isn't good enough to match Bayes (remember those curves in 4D?). By tweeking the error signal a little bit, an "Extended Kalman Filter (EKF)" alogirhtm can apporach Bayesian integration. By updating the estimate with a nonlinear function of the error, _f_(_x<sub>n</sub>_), this algorithm can be deployed to nearly match Bayes. It turns out that such an updating algorithm better explains human behaior than either Bayesian or simpler, linear models.
 
-<img src="images/Psychophysics/Figure6.png" alt="EKF" style="width: 250px;"/>
+<img src="images/Psychophysics/Figure6.png" alt="EKF" style="width: 350px;"/>
 
 From a broader perspective this is an interesting finding. It suggests that the brain can't perform the sophisticated operations required of the Bayesian operation in real-time. At the same time it suggests that the approximation the brain uses is to update internal estimates. Reconsidering the task of the batter in Fig 1, this finding suggests that the brain is using the simulation to make predictions about the ball's position and speed and updating that simulation according to a nonlinear function of the prediction error.
 
@@ -54,19 +54,19 @@ Specifically, we expect the brain to form two representations: _r<sub>1</sub>_ w
 ### Dynamic population activity represents the control signal and simulation
 We tested these ideas by recording from populations of neurons in the pre-motor cortex. We see evidence that the brain implements this strategy by examining the state of population activity, conditioned on _t<sub>s</sub>_, over the course of 1-2-3-Go, which I will refer to as a neural trajectory (Fig 7).
 
-<img src="images/Physiology/Trajectories.png" alt="Trajectories" style="width: 1000px;"/>
+<img src="images/Physiology/Trajectories.png" alt="Trajectories" style="width: 500px;"/>
 
 Although trajectories corresponding to different _t<sub>s</sub>_ were highly self-similar, they were offset from one another after S2 form a persistent but dynamic representation of _t<sub>s</sub>_, much like our prediction of the _r<sub>1</sub>_ population in Fig 6). Further, trajectories terminated in nearby states at the time of S3 and Go irrespective of the duration of _t<sub>s</sub>_. This observation implies that the speed at which different trajectories evolve has an inverse relationship to _t<sub>s</sub>_, consistent with the behavior of a predictive simulator (e.g. _r<sub>2</sub>_ in Fig 6).
 
 To quantify this, we took advantage of the fact that trajectories were self-similar, and treated neural activities as runners on a track. That is, a fast moving trajectory will take less time to move a given distance along the track than a slow moving trajectory. We therefore found the time it took each trajectory to move to each location along the "track" (Fig 8).
 
-<img src="images/Physiology/NeuralSpeeds.png" alt="NeuralSpeeds" style="width: 500px;"/>
+<img src="images/Physiology/NeuralSpeeds.png" alt="NeuralSpeeds" style="width: 750px;"/>
 
 Much like our simple hypothesis which predicted timing with ramping activity of different speeds (i.e. slopes), we found that neural populations regulate their speeds in a manner consistent with the action of a simulator.
 
 To quantify the offset of neural trajectories from the trajectory associated with _t<sub>s</sub>_ = 800 ms (e.g. 'Separation'), we measured the distance between trajectories at corresponding locations (e.g. the same place on the track).
 
-<img src="images/Physiology/NeuralDistance.png" alt="NeuralDistance" style="width: 500px;"/>
+<img src="images/Physiology/NeuralDistance.png" alt="NeuralDistance" style="width: 750px;"/>
 
 Again, we observe a direct correlate from our simple hypothesis – the separation of trajectories is consistent with the control signal output.
 
