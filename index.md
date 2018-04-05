@@ -52,6 +52,6 @@ Specifically, we expect the brain to form two representations: _r<sub>1</sub>_ w
 
 We see evidence that the brain implements this strategy by examining the state of population activity, conditioned on _t<sub>s</sub>_ over the course of 1-2-3-Go (Fig 7).
 
-<img src="images/Physiology/NeuralHypot.png" alt="NeuralHypothesis" style="width: 250px;"/>
+<img src="images/Physiology/Trajectories.png" alt="NeuralHypothesis" style="width: 250px;"/>
 
 
