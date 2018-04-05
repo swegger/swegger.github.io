@@ -47,33 +47,33 @@ From a broader perspective this is an interesting finding. It suggests that the 
 ### Internal model hypothesis
 But how does the brain actually pull this off? We formulated our hypothesis based on (1) the EKF result, during which subjects appear to formulate predictions about the timing of the next flash; (2) the presence of ramping activity leading up to actions and anticipated events (e.g. Hanes and Schall, 1996; Komura et. al., 2001); and (3) the internal model hypothesis, which tells us that predictive simulations reflect a control signal. Putting these elements together, we hypothesized that during 1-2-3-Go (Fig 6).
 
-<img src="images/Physiology/NeuralHypot.png" alt="NeuralHypothesis" style="width: 250px;"/>
+<img src="images/Physiology/NeuralHypot.png" alt="NeuralHypothesis" style="width: 500px;"/>
 
 Specifically, we expect the brain to form two representations: _r<sub>1</sub>_ which represents the control signal (related to 1/_t<sub>e<sub>n</sub></sub>_) and _r<sub>2</sub>_ which represents the simulation. At S1, the _r<sub>1</sub>_ is based on _t<sub>e<sub>0</sub></sub>_, the estimate based on prior knowledge alone, and therefore will not vary with _t<sub>s</sub>_ (Fig 6, top left). _r<sub>2</sub>_ will be driven toward an expected state at the time of S2 (horizontal line in Fig 6, bottom left), generating ramping activity that will end at different states depending on _t<sub>s</sub>_ (squares). Like the EKF, the error between the expected result (line) and the actual result (squares) of the simulation are used to update the control signal at S2. As a result, _r<sub>1</sub>_ will have different levels that now reflect _t<sub>e<sub>1</sub></sub>_, and will therefore be different on average for different _t<sub>s</sub>_ (Fig 6, top middle). _r<sub>2</sub>_, which integrates the control signal, will now ramp up at different rates that better anticipate the state at S3 (Fig 6, bottom middle). Residual errors between the expected result (line) and actual result (squares) can again be used to update the control signal after S3, such that it refelcts _t<sub>e<sub>2</sub></sub>_ (Fig 6, top right). The control signal then drives _r<sub>2</sub>_ to threshold to activate a saccadic eye movement at the estimated time of the forth beat (Fig 6, bottom right).
 
 ### Dynamic population activity represents the control signal and simulation
 We tested these ideas by recording from populations of neurons in the pre-motor cortex. We see evidence that the brain implements this strategy by examining the state of population activity, conditioned on _t<sub>s</sub>_, over the course of 1-2-3-Go, which I will refer to as a neural trajectory (Fig 7).
 
-<img src="images/Physiology/Trajectories.png" alt="Trajectories" style="width: 250px;"/>
+<img src="images/Physiology/Trajectories.png" alt="Trajectories" style="width: 1000px;"/>
 
 Although trajectories corresponding to different _t<sub>s</sub>_ were highly self-similar, they were offset from one another after S2 form a persistent but dynamic representation of _t<sub>s</sub>_, much like our prediction of the _r<sub>1</sub>_ population in Fig 6). Further, trajectories terminated in nearby states at the time of S3 and Go irrespective of the duration of _t<sub>s</sub>_. This observation implies that the speed at which different trajectories evolve has an inverse relationship to _t<sub>s</sub>_, consistent with the behavior of a predictive simulator (e.g. _r<sub>2</sub>_ in Fig 6).
 
 To quantify this, we took advantage of the fact that trajectories were self-similar, and treated neural activities as runners on a track. That is, a fast moving trajectory will take less time to move a given distance along the track than a slow moving trajectory. We therefore found the time it took each trajectory to move to each location along the "track" (Fig 8).
 
-<img src="images/Physiology/NeuralSpeeds.png" alt="NeuralSpeeds" style="width: 250px;"/>
+<img src="images/Physiology/NeuralSpeeds.png" alt="NeuralSpeeds" style="width: 500px;"/>
 
 Much like our simple hypothesis which predicted timing with ramping activity of different speeds (i.e. slopes), we found that neural populations regulate their speeds in a manner consistent with the action of a simulator.
 
 To quantify the offset of neural trajectories from the trajectory associated with _t<sub>s</sub>_ = 800 ms (e.g. 'Separation'), we measured the distance between trajectories at corresponding locations (e.g. the same place on the track).
 
-<img src="images/Physiology/NeuralDistance.png" alt="NeuralDistance" style="width: 250px;"/>
+<img src="images/Physiology/NeuralDistance.png" alt="NeuralDistance" style="width: 500px;"/>
 
 Again, we observe a direct correlate from our simple hypothesis – the separation of trajectories is consistent with the control signal output.
 
 ### Dynamical systems implementation
 Finally, we asked what kind of neural circuit might be able to generate our two main findings: (1) separatin of trajectories, (2) trajectories that move at different speeds, and (3) updating based on error in predicted state. To do so, we built on simple circuit motif that can be used to generate different timed actions (Wang et. al., 2017; Fig 9a), and used this as a core computational unit for 1-2-3-Go.
 
-<img src="images/Physiology/CascadeModel.png" alt="CascadeModel" style="width: 600px;"/>
+<img src="images/Physiology/CascadeModel.png" alt="CascadeModel" style="width: 1000px;"/>
 
 The core computational unit consists of two neural populations, _u_ and _v_, that reciprocolly inhibit one another and share common input, _I_ (Fig 9a, top). Depending on the level of _I_, the dynamical system will have different energy landscapes: shallow for a large input and deep for a small input (Fig 9a, middle, pink and blue lines, respectively). As a result neural activity will move slowly for towards its stable point (_F<sub>terminal<\sub>_) for a large input and quickly for a small input. In addition, the level of input controls the position of the trajectory in state space in a direction orthogonal to the direction in which neural trajectories move (Input and Recurrent subspaces, respectively; Fig 9a, bottom). Therefore, to get trajectories that move at different speeds in different regions of the state space, one only needs to supply different levels of input.
   
