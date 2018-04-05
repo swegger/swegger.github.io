@@ -4,8 +4,6 @@ title: Scientifc page for SWE
 
 
 ## Seth W. Egger
-Pardon me, but this site is still under construction...
-
 
 How does the brain allow for complex behaviors and cognition? Several decades of research have advanced the idea that the brain develops _internal models_ – models internal to the system that allow it to control complex systems and simulate outcomes. While this framework is instrumental to understanding sensorimotor behavior, how the brain implements internal models remains quite mysterious.
 
@@ -41,9 +39,19 @@ A somewhat easier way to pull of this computation in real time is to maintain an
 
 <img src="images/Psychophysics/Figure6.png" alt="EKF" style="width: 250px;"/>
 
-From a broader perspective this is an interesting finding. It suggests that the brain can't perform the sophisticated operations required of the Bayesian operation in real-time. At the same time it suggests that the approximation the brain uses is to update internal estimates. Reconsidering the task of the batter in Fig 1, this finding suggests that the brain is using the simulation to make predictions about the ball's position and updating that simulation according to a nonlinear function of the prediction error.
+From a broader perspective this is an interesting finding. It suggests that the brain can't perform the sophisticated operations required of the Bayesian operation in real-time. At the same time it suggests that the approximation the brain uses is to update internal estimates. Reconsidering the task of the batter in Fig 1, this finding suggests that the brain is using the simulation to make predictions about the ball's position and speed and updating that simulation according to a nonlinear function of the prediction error.
 
 [Please see our full publication for more in depth information.](https://www.biorxiv.org/content/early/2018/02/07/258434)
 
 ## Physiology
-But how does the brain actually pull this off? To be continued...
+But how does the brain actually pull this off? We formulated our hypothesis based on (1) the EKF result, during which subjects appear to formulate predictions about the timing of the next flash; (2) the presence of ramping activity leading up to actions and anticipated events (e.g. Hanes and Schall, 1996; Komura et. al., 2001); and (3) the internal model hypothesis, which tells us that predictive simulations reflect a control signal. Putting these elements together, we hypothesized that during 1-2-3-Go (Fig 6).
+
+<img src="images/Physiology/NeuralHypot.png" alt="NeuralHypothesis" style="width: 250px;"/>
+
+Specifically, we expect the brain to form two representations: _r<sub>1</sub>_ which represents the control signal (related to 1/_t<sub>e<sub>n</sub></sub>_) and _r<sub>2</sub>_ which represents the simulation. At S1, the _r<sub>1</sub>_ is based on _t<sub>e<sub>0</sub></sub>_, the estimate based on prior knowledge alone, and therefore will not vary with _t<sub>s</sub>_ (Fig 6, top left). _r<sub>2</sub>_ will be driven toward an expected state at the time of S2 (horizontal line in Fig 6, bottom left), generating ramping activity that will end at different states depending on _t<sub>s</sub>_ (squares). Like the EKF, the error between the expected result (line) and the actual result (squares) of the simulation are used to update the control signal at S2. As a result, _r<sub>1</sub>_ will have different levels that now reflect _t<sub>s</sub>_ (Fig 6, top middle). _r<sub>2</sub>_, which integrates the control signal, will now ramp up at different rates that better anticipate the state at S3 (Fig 6, bottom middle). Residual errors between the expected result (line) and actual result (squares) can again be used to update the control signal after S3 (Fig 6, top right). The control signal then drives _r<sub>2</sub>_ to threshold to activate a saccadic eye movement at the estimated time of the forth beat (Fig 6, bottom right).
+
+We see evidence that the brain implements this strategy by examining the state of population activity, conditioned on _t<sub>s</sub>_ over the course of 1-2-3-Go (Fig 7).
+
+<img src="images/Physiology/NeuralHypot.png" alt="NeuralHypothesis" style="width: 250px;"/>
+
+
