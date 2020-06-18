@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Timing
-permalink: https://github.com/swegger/swegger.github.io/edit/master/Timing.md
+permalink: https://github.com/swegger/swegger.github.io/edit/master/blob/Timing.md
 ---
 
 How does the brain allow for complex behaviors and cognition? Several decades of research have advanced the idea that the brain develops _internal models_ – models built by the brain that allow the of control complex systems and simulation of possible outcomes. While this framework is instrumental to understanding sensorimotor behavior, how the brain implements internal models remains quite mysterious.
