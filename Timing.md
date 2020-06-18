@@ -1,5 +1,7 @@
 ---
-title: Scientifc page for SWE
+layout: page
+title: Timing
+permalink: https://github.com/swegger/swegger.github.io/edit/master/Timing.md
 ---
 
 
