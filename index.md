@@ -21,3 +21,4 @@ The key to understanding how the brain controls its internal states for cognitio
 ### Principles of gain control
 
 ## [CV](Egger_cv.pdf)
+## [Google Scholar](https://scholar.google.com/citations?user=_xz3zlwAAAAJ&hl=en)
