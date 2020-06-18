@@ -13,4 +13,4 @@ Our approach is to study the brain as it takes in sensory information and update
 
 By introducing occluders that block vision of the ball (Fig 1, bottom), we allow ourselves the opportunity to measure the neural system as it carries out the simulation. Through a detailed analysis of human and nonhuman behavior, neurophysiological recordings of groups of neurons, and modeling, we attempt to garner a better understanding the algorithms and mechanisms that allow for complex behaviors.
 
-### [1-2-Go and 1-2-3-Go](https://github.com/swegger/swegger.github.io/edit/master/Timing.md)
+### [1-2-Go and 1-2-3-Go](Timing.md)
