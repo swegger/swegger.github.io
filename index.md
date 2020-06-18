@@ -18,7 +18,7 @@ The key to understanding how the brain controls its internal states for cognitio
 
 ## Research projects
 ### [Internal models for action timing](InternalModels)
-### Principles of gain control
+### [Principles of gain control](Gain)
 
 ## More info
 ### [CV](Egger_cv.pdf)
