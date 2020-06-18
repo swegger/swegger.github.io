@@ -9,7 +9,7 @@ How does the brain allow for complex behaviors and cognition? How can we prepare
 
 The processes by which internal states are controlled remain completely mysterious. One framework for approaching this problem is to think of the brain as a dynamical – much like the position of a boat in the tides will determine its course, the state of the brain at any momment will determine how that state changes over time. One momment might require a specific form of dynamics to integrate sensory information, while another momment might require another to prepare the right movements.
 
-<img src="images/TICS/ComputationThroughDynamics.jpg" alt="ComputationThroughDynamics" style="width: 300px;"/>
+<img src="images/TICS/ComputationThroughDynamics.jpg" alt="ComputationThroughDynamics" style="width: 500px;"/>
 
 The key to understanding how the brain controls its internal states for cognition and complex behavior, therefore, might be in understanding the prinicples by which the underlying dynamical system is harnessed to perform specific computations. The main goal of my research is to develop models and perform experiments that allow us to infer these priniciples.
 
