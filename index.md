@@ -14,7 +14,7 @@ The processes by which internal states are controlled remain completely mysterio
 The key to understanding how the brain controls its internal states for cognition and complex behavior, therefore, might be in understanding the prinicples by which the underlying dynamical system is harnessed to perform specific computations. The main goal of my research is to develop models and perform experiments that allow us to infer these priniciples.
 
 ## Research projects
-### [Internal models for action timing](Timing.md)
+### [Internal models for action timing](https://github.com/swegger/swegger.github.io/master/Timing.md)
 ### Principles of gain control
 
 ## [CV](Egger_cv.pdf)
