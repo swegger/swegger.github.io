@@ -5,12 +5,16 @@ title: Scientifc page for SWE
 
 ## Seth W. Egger
 
-How does the brain allow for complex behaviors and cognition? Several decades of research have advanced the idea that the brain develops _internal models_ – models built by the brain that allow the of control complex systems and simulation of possible outcomes. While this framework is instrumental to understanding sensorimotor behavior, how the brain implements internal models remains quite mysterious.
+How does the brain allow for complex behaviors and cognition? How can we prepare different movements, integrate information, or flexibly decide based on context? A key idea is that, even if sensory inputs and motor outputs are unchanging, the internal workings of the brain perform computations that allow behavioral flexibility to be achieved. A corollary of this proposition is that the state of the brain must be controlled by internal processes such that they evolve towards a different state that is the output of this computation.
 
-Our approach is to study the brain as it takes in sensory information and updates the internal model to furnish predictions about the near future. Take, for example, a batter attempting to hit a ball in flight. Under the internal model framework, the batter's brain implements a model to simulate the ball's flight path. This simulation is continuously updated by incoming visual information through the action of a state estimator and controller (Fig 1, top). The problem with studying this system is that we can't tell apart what aspects of neural signals reflect the sensory information about the ball, the simulation of the ball, or the motor commands related to hitting the ball. 
+The processes by which internal states are controlled remain completely mysterious. One framework for approaching this problem is to think of the brain as a dynamical – much like the position of a boat in the tides will determine its course, the state of the brain at any momment will determine how that state changes over time. One momment might require a specific form of dynamics to integrate sensory information, while another momment might require another to prepare the right movements.
 
 <img src="images/TICS/ComputationThroughDynamics.jpg" alt="ComputationThroughDynamics" style="width: 500px;"/>
 
-By introducing occluders that block vision of the ball (Fig 1, bottom), we allow ourselves the opportunity to measure the neural system as it carries out the simulation. Through a detailed analysis of human and nonhuman behavior, neurophysiological recordings of groups of neurons, and modeling, we attempt to garner a better understanding the algorithms and mechanisms that allow for complex behaviors.
+The key to understanding how the brain controls its internal states for cognition and complex behavior, therefore, might be in understanding the prinicples by which the underlying dynamical system is harnessed to perform specific computations. The main goal of my research is to develop models and perform experiments that allow us to infer these priniciples.
 
-### [1-2-Go and 1-2-3-Go](Timing.md)
+## Research projects
+### [Internal models for action timing](Timing.md)
+### Principles of gain control
+
+## [CV](Egger_cv.pdf)
